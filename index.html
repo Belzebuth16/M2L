@@ -1,0 +1,82 @@
+﻿<html>
+	<head>
+		<title>Conception charte graphique</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" title="Style par défaut">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" title="Style par défaut" >
+		<link href="icons/icons-material-design.css" rel="stylesheet" type="text/css" title="Style par défaut">
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				    <a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top: -17px;"></a>
+				  </div>
+				  <div class="navbar-collapse collapse navbar-responsive-collapse">
+				    <ul class="nav navbar-nav">
+			    	  <li><a href="#">Utilisateurs</a></li>	 
+				      <li><a href="#">Salles</a></li>
+				      <li><a href="#">Réservations</a></li>
+				    </ul>
+				    <form class="navbar-form navbar-left">
+				      <input type="text" class="form-control col-lg-8" placeholder="Search">
+				    </form>
+				    <ul class="nav navbar-nav navbar-right">
+				      <li><a data-toggle="modal" data-target="#loginModal" href="#">Connexion</a></li>
+				      <li class="dropdown">
+
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="#">Action</a></li>
+				          <li><a href="#">Another action</a></li>
+				          <li><a href="#">Something else here</a></li>
+				          <li class="divider"></li>
+				          <li><a href="#">Separated link</a></li>
+				        </ul>
+				      </li>
+				    </ul>
+				  </div>	
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Bienvenue sur le site de réservations des salles de la M2L !</h2>
+			<a href="#" onclick="$('#loginModal').modal('show')" class="btn btn-primary btn-sm btn-block">Se Connecter</a>
+		</div>
+
+
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Login</h4>
+		      </div>
+		      <div class="modal-body">
+        		<form class="form col-md-12 center-block">
+		            <div class="form-group">
+		              <input type="text" class="form-control input-md" placeholder="Email">
+		            </div>
+		            <div class="form-group">
+		              <input type="password" class="form-control input-md" placeholder="Password">
+		            </div>
+		            <div class="form-group">
+		              <button class="btn btn-primary btn-md btn-block">Se Connecter</button>
+		              <span class="pull-right"><a href="#">S'enregistrer</a></span><span><a href="#">Besoin d'aide ?</a></span>
+		            </div>
+	          	</form>
+	      	  </div>
+	      	<div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	</body>
+</html>
